@@ -1,0 +1,20 @@
+﻿<!-- Navigation -->
+<nav class="navbar navbar-expand navbar-light bg-info px-3" *ngIf="user">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" style="font-weight: bold;">Home</a>
+        <a class="nav-item nav-link" routerLink="/product-list" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" style="font-weight: bold;">Apps</a>
+        <a class="nav-item nav-link" routerLink="/admin" routerLinkActive="active" *ngIf="user && isAdmin()" style="font-weight: bold;">Admin</a>
+        <button class="btn btn-link nav-item nav-link" (click)="logout()" style="font-weight: bold;">Logout</button>
+    </div>
+</nav>
+
+<div class="container">
+    <!-- Router outlet for displaying different views -->
+    <router-outlet></router-outlet>
+</div> 
+
+<!-- Footer -->
+<footer class="text-center mt-4">
+    <p>Created by S A Sreejith</p>
+    <p>April 2024</p>
+</footer>

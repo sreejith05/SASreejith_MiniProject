@@ -1,0 +1,15 @@
+<div style="max-width: 800px; margin: 0 auto; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); padding: 30px;">
+  <h2 style="text-align: center; color: #007bff; margin-bottom: 30px;">Product Details</h2>
+  <div *ngIf="product" style="text-align: center;">
+    <h4 style="color: #333; margin-bottom: 20px;">{{ product.name }}</h4>
+    <img [src]="product.image" alt="{{ product.name }}" style="width: 450px; height: 300px; margin-bottom: 20px;" />
+    <div style="text-align: left;">
+      <p style="font-size: 18px; line-height: 1.6; margin-bottom: 10px;"><span style="font-weight: bold;">Category:</span> {{ product.category }}</p>
+      <p style="font-size: 18px; line-height: 1.6; margin-bottom: 10px;"><span style="font-weight: bold;">Description:</span> {{ product.description }}</p>
+      <p style="font-size: 18px; line-height: 1.6; margin-bottom: 10px;"><span style="font-weight: bold;">Release Date:</span> {{ product.releaseDate }}</p>
+      <p style="font-size: 18px; line-height: 1.6; margin-bottom: 10px;"><span style="font-weight: bold;">Version:</span> {{ product.version }}</p>
+      <p style="font-size: 18px; line-height: 1.6; margin-bottom: 10px;"><span style="font-weight: bold;">Ratings:</span> {{ product.ratings }}</p>
+      <p style="font-size: 18px; line-height: 1.6; margin-bottom: 10px;"><span style="font-weight: bold;">Genre:</span> {{ product.genre }}</p>
+    </div>
+  </div>
+</div>

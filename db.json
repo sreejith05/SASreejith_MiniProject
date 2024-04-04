@@ -1,0 +1,143 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin",
+      "firstName": "Admin",
+      "lastName": "User",
+      "role": "Admin"
+    },
+    {
+      "id": 2,
+      "username": "user",
+      "password": "user",
+      "firstName": "Normal",
+      "lastName": "User",
+      "role": "User"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Grand Theft Auto: Vice City",
+      "category": "Games",
+      "description": "Welcome to the 1980s. From the decade of big hair, excess, and pastel suits comes a story of one man's rise to the top of the criminal pile as Grand Theft Auto returns.Vice City is a huge urban sprawl ranging from the beach to the swamps and the glitz to the ghetto, and is the most varied, complete, and alive digital city ever created. Combining non-linear gameplay with a character-driven narrative, you arrive in a town brimming with delights and degradation and are given the opportunity to take it over as you choose.",
+      "releaseDate": "29/10/2002",
+      "version":  1.0066,
+      "image": "https://blogs.gomechanic.com/wp-content/uploads/2022/10/Gta-vice-city-ft.jpg",
+      "ratings": "4.8",
+      "genre": ["Action", "Adventure"]
+    },
+    {
+      "id":2 ,
+      "name": "Battlegrounds Mobile India",
+      "category": "Games",
+      "description": "Battlegrounds Mobile India (BGMI, previously known as PUBG Mobile India) is a version of PUBG Mobile, exclusively available in India.BGMI is a TPP-FPP survival shooter game in which up to 100 players compete in a battle royale, a type of large-scale last man standing deathmatch in which players compete to be the last one standing. Players can enter the match as individuals or as small groups of up to four.",
+      "releaseDate": "02/06/2021",
+      "version": 3.0,
+      "image": "https://images.firstpost.com/wp-content/uploads/2022/10/BGMI-was-banned-in-July-this-year.-Will-the-battle-royale-make-a-comeback-this-year.jpg",
+      "ratings": "4.8",
+      "genre": ["Battle Royale"]
+    },
+    {
+      "id": 3,
+      "name": "Valorant",
+      "category": "Games",
+      "description": "Valorant is a team-based first-person tactical hero shooter set in the near future. Players play as one of a set of Agents, characters based on several countries and cultures around the world. In the main game mode, players are assigned to either the attacking or defending team with each team having five players on it. Agents have unique abilities, each requiring charges, as well as a unique ultimate ability that requires charging through kills, deaths, orbs, or objectives. Every player starts each round with a classic pistol and one or more signature ability charges. Other weapons and ability charges can be purchased using an in-game economic system that awards money based on the outcome of the previous round, any kills the player is responsible for, and any objectives completed. The game has an assortment of weapons including secondary guns like sidearms and primary guns like submachine guns, shotguns, machine guns, assault rifles and sniper rifles.",
+      "releaseDate": "02/06/2020",
+      "version": 2.0,
+      "image": "https://images.indianexpress.com/2021/06/Valorant-Mobile.jpg",
+      "ratings": "4.5",
+      "genre": ["Tactical Shooter"]
+    },
+    {
+      "id":4 ,
+      "name": "Beardo Hair Serum",
+      "category": "Beauty",
+      "description": "NOURISHING ARGAN OIL: The power of Argan and Almond Oil helps nourish and moisturize your hair that stimulates thicker and fuller hair.SOFT SHINIER AND THICKER HAIR: Get that instant shine and long lasting softness without weighing the hair down. Rich in Vitamin E, argan oil supports the scalp. TAME FRIZZ: Packed with a blend of essential oils that help prevent dryness and tames brittle and frizzy hair. For best results, use daily on damp or towel-dried hair, and MADE JUST FOR YOU: Specially designed for mens hair and is suitable for colored, bleached, frizzy, fine, thick, thin, blonde, black or curly Hair",
+      "releaseDate": "02/04/2024",
+      "version": 1.0,
+      "image": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/32fa3619-cb7f-4739-a567-a3400bed034f.__CR0,0,970,600_PT0_SX970_V1___.jpg",
+      "ratings": "4.8",
+      "genre": ["Hair"]
+    },
+    {
+      "id":5 ,
+      "name": "Beardo De-Tan Skin Care",
+      "category": "Beauty",
+      "description": "Beardo De-Tan Facewash for Men helps you retain your shade in sun! The strong sunlight and UV rays can be harsh to the skin but there's no way we can ignore it. Regular exposure to sun and dust can lead to tanning and other skin issues. Beardo De-tan Facewash is specially designed to rescue you from the unwanted tan. Enriched with natural aloe vera extracts and vitamin E, this facewash will not only cleanse your skin, but will also heal it, nourish it and detan it without stripping it off its natural oils. By using this face wash regularly, your skin will have a clear and glowing skin you've always wanted. Features:Detoxifying and rejuvenating men's face wash for a tan-free and radiant skinEnriched with natural aloe vera extracts and vitamin E for a brighter and better complexion. This facewash deep cleanses skin and removes dirt and impurities from the skin's surface. Moisturizes and nourishes dull skin and leaves it looking lighter and even toned. This product promotes refreshed and hydrated looking skin",
+      "releaseDate": "02/04/2024",
+      "version": 1.0,
+      "image": "https://bigbasket.com/media/uploads/flatpages/pd/40187408-11.1.jpg",
+      "ratings": "5.0",
+      "genre": ["Skin"]
+    },
+    {
+      "id":6 ,
+      "name": "Air Jordan I High OG Black/Red",
+      "category": "Fashion",
+      "description": "An Air-Sole unit provides lightweight cushioning. Real and synthetic leather in the upper offers durability and structure. A solid rubber outsole gives you traction on a variety of surfaces. Textile tongue feels soft and comfortable. True to Michael's beginnings in the NBA and his beloved Bulls, the black and red colourway or 'Bred' as they're colloquially known in the sneaker world, is the most iconic and instantly recognizable makeup of the Jordan 1.",
+      "releaseDate": "07/03/2021",
+      "version": 1.0,
+      "image": "https://images.vegnonveg.com/resized/700X573/10048/air-jordan-1-retro-hi-og-blackuniversity-red-white-6528f5a377aa8.jpg",
+      "ratings": "5.0",
+      "genre": ["Footwear"]
+    },
+    {
+      "id":7 ,
+      "name": "Roadster Men Black Solid Round Neck T-shirt",
+      "category": "Fashion",
+      "description": "The Roadster Men's Black Solid Round Neck T-shirt exudes timeless simplicity and versatility. Crafted with premium quality fabric, it offers comfort and durability. Its classic round neck design and solid black color make it a versatile wardrobe staple, suitable for various casual occasions, ensuring effortless style with every wear.",
+      "releaseDate": "03/08/2024",
+      "version": 1.0,
+      "image": "https://media.istockphoto.com/id/173149051/photo/a-young-man-in-three-different-poses.jpg?s=170667a&w=0&k=20&c=WGqmgG7ZMkoVbRTEFoANSUqrlXl4fPZ_D-r0r9RBTcM=",
+      "ratings": "4.8",
+      "genre": ["Clothing"]
+    },
+    {
+      "id":8 ,
+      "name": "Sutra Art of Clothing Ethnic Motifs Woven Design Zari Pure Silk Kanchipattu Saree",
+      "category": "Women",
+      "description": "Design Details: Pink and gold-toned kanchipattu saree Ethnic motifs woven design saree with woven design border. Has zari detail. The saree comes with an unstitched blouse piece.The blouse worn by the model might be for modelling purpose only. Check the image of the blouse piece to understand how the actual blouse piece looks like.Size & Fit - Length: 5.5 metres plus 0.8 metre blouse piece, Width: 1.06 metres (approx.) Material & Care- Saree Fabric: Pure Silk, Blouse Fabric: Pure Silk, Dry Clean",
+      "releaseDate": "09/11/2022",
+      "version": 1.0,
+      "image": "https://www.kanchipurampattu.com/images/slider-1.jpg",
+      "ratings": "4.9",
+      "genre": ["Sarees"]
+    },
+    {
+      "id":9 ,
+      "name": "Virginia Rose-Tone Stainless Steel Watch",
+      "category": "Women",
+      "description": "Shiny steel meets dramatic glitz—made for modern sophisticates and vintage enthusiasts alike, you won't be able to live without our ever-chic Virginia. This Virginia watch also features a three hand movement on a stainless steel bracelet.",
+      "releaseDate": "01/05/2021",
+      "version": 1.0,
+      "image": "https://fossil.scene7.com/is/image/FossilPartners/ES3405_onwrist?$sfcc_onmodel_large$",
+      "ratings": "4.2",
+      "genre": ["Watches"]
+    },
+    {
+      "id":10 ,
+      "name": "Optimum Nutrition Whey Protein Double Rich Chocolate Flavour ",
+      "category": "Health",
+      "description": "Optimum Nutrition Gold Standard 100% Whey is a high-quality complete protein from Glanbia Performance Nutrition. It is the #1 Best-Selling, most awarded, and most reviewed Whey Protein Powder in the world. It is a blended protein with whey protein isolate (WPI) as the primary protein. It provides 24g protein, 5.5g BCAAs, and 11g of naturally occurring EAAs per scoop to help build and maintain muscle, and support endurance and recovery. With 100% of protein from whey, it is suitable for Vegetarians. Gluten Free. Informed Choice certified-tested for banned substances. Trusted by the best athletes all over the world for over 35 years. It is also instantized for easy mixing using just a glass and spoon.",
+      "releaseDate": "02/04/2024",
+      "version": 1.0,
+      "image": "https://ik.imagekit.io/wlfr/wellness/images/products/330905-2.jpg/tr:w-3840,dpr-1,c-at_max,cm-pad_resize,ar-1210-700,pr-true,f-webp,q-80,l-image,i-Wellness_logo_BDwqbQao9.png,lfo-bottom_right,w-200,h-90,c-at_least,cm-pad_resize,l-end",
+      "ratings": "4.7",
+      "genre": ["Healthcare"]
+    },
+    {
+      "id":11 ,
+      "name": "Himalaya Ashvagandha Immunity Booster Tablets",
+      "category": "Health",
+      "description": "Known as the “Indian ginseng” ashwagandha is a natural herb with several benefits that help our body. Consumption of the herb rejuvenates and strengthens the mind and body, helping you to effectively deal with everyday stress and work. The Himalaya Ashwagandha capsules act as immunity boosters and aid the body to maintain a balance between the functioning of the different systems of the body, including the nervous system, immune system and endocrine glands. The Himalaya capsules help reduce stress levels and promote sexual prowess and uplift mood while boosting energy levels. Traditionally Ashwagandha is considered an aphrodisiac and helps with sexual performance and fertility. The herb is beneficial for those who have health issues like hypertension, diabetes and arthritis as a result of excessive day to day stress. Take these natural herb capsules daily and notice the difference in your body and energy levels.",
+      "releaseDate": "02/04/2023",
+      "version": 1.0,
+      "image": "https://cdn01.pharmeasy.in/dam/products_otc/192968/himalaya-ashvagandha-immunity-booster-tablets-bottle-of-60-6.2-1687504258.jpg",
+      "ratings": "4.5",
+      "genre": ["Healthcare"]
+    }
+  ]
+}
