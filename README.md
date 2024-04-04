@@ -1,2 +1,0 @@
-# SASreejith_MiniProject
-
