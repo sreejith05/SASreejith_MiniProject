@@ -3,21 +3,21 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "SASreejith_MiniProject": { 
+    "sasreejith-miniproject": { 
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "less"
         }
       },
-      "root": "SASreejith_MiniProject", 
+      "root": "sasreejith-miniproject", 
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-14-example",
+            "outputPath": "dist/sasreejith-miniproject",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "SASreejith_MiniProject:build:production"
+              "browserTarget": "sasreejith-miniproject:build:production"
             },
             "development": {
-              "browserTarget": "SASreejith_MiniProject:build:development" 
+              "browserTarget": "sasreejith-miniproject:build:development" 
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "SASreejith_MiniProject:build" 
+            "browserTarget": "sasreejith-miniproject:build" 
           }
         },
         "test": {
