@@ -13,6 +13,7 @@ interface Item {
 })
 export class AppComponent {
   user: User | null = null;
+favorites: any;
   // items: Item[] = [
   //   { name: 'Item 1', category: 'Games' },
   //   { name: 'Item 2', category: 'Beauty' },
