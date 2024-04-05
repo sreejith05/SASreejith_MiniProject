@@ -1,0 +1,10 @@
+<div style="margin-top: 30px;">
+  <h3 style="color: #007bff;">Favorites</h3>
+
+  <ul style="list-style-type: none; padding: 0;">
+    <li *ngFor="let favorite of favorites" style="font-size: 18px; line-height: 1.6; margin-bottom: 10px;">
+      {{ favorite.name }}
+    </li>
+    <p *ngIf="favorites.length === 0">You don't have any favorites yet!</p>
+  </ul>
+</div>

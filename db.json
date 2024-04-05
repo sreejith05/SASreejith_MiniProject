@@ -4,16 +4,16 @@
       "id": 1,
       "username": "admin",
       "password": "admin",
-      "firstName": "Admin",
-      "lastName": "User",
+      "firstName": "S A",
+      "lastName": "Sreejith",
       "role": "Admin"
     },
     {
       "id": 2,
       "username": "user",
       "password": "user",
-      "firstName": "Normal",
-      "lastName": "User",
+      "firstName": "Krishna",
+      "lastName": "Prasad",
       "role": "User"
     }
   ],
