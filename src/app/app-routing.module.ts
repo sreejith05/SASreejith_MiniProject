@@ -6,8 +6,9 @@ import { AdminComponent } from './admin';
 import { LoginComponent } from './login';
 import { AuthGuard } from './_helpers';
 import { Role } from './_models';
-import {ProductListComponent} from './product-list/product-list.component';
+import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { ProductCreateComponent } from './product-create/product-create.component';
 
 const routes: Routes = [
     {
@@ -33,6 +34,7 @@ const routes: Routes = [
         path: 'product/:id',
         component: ProductDetailComponent
     },
+    { path: 'product-create', component: ProductCreateComponent },
     // Wildcard route: Redirect any unknown routes to the home page
     { path: '**', redirectTo: '' }
 ];

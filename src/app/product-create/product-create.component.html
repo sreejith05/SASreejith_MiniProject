@@ -1,0 +1,6 @@
+<div class="card mt-4" style="max-width: 500px; margin: 0 auto; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    <h4 class="card-header" style="background-color: #007bff; color: #fff; text-align: center; padding: 20px;">Create Product</h4> 
+<app-product-form [product]="newProduct" (createProduct)="onCreateProduct($event)"></app-product-form>
+
+<!-- <button><a  routerLink="/product-create" routerLinkActive="active" >Create Product</a></button>
+<button><a>Update Product</a></button> -->

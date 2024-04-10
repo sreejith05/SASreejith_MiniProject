@@ -14,14 +14,6 @@ interface Item {
 export class AppComponent {
   user: User | null = null;
 favorites: any;
-  // items: Item[] = [
-  //   { name: 'Item 1', category: 'Games' },
-  //   { name: 'Item 2', category: 'Beauty' },
-  //   { name: 'Item 3', category: 'Fashion' },
-  //   { name: 'Item 4', category: 'Women' },
-  //   { name: 'Item 5', category: 'Health' }
-  // ];
-  // filteredItems: Item[] = [];
 
   constructor(
     private authenticationService: AuthenticationService,

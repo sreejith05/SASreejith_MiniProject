@@ -1,31 +1,39 @@
 <div style="max-width: 800px; margin: 0 auto; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); padding: 30px;">
 
-  <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-    <div>
-      <input type="text" [(ngModel)]="searchTerm" placeholder="Search Products" (keyup)="searchApplications()"
-        style="background-color: #d0e7ff; color: #000000; border: none; padding: 10px 20px; margin-right: 10px; cursor: pointer;">
-    </div>
-  </div>
-
   <h2 style="text-align: center; color: #007bff; margin-bottom: 30px;">Product List</h2>
 
   <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-    <div>
-      <button style="background-color: #007bff; color: #fff; border: none; padding: 10px 20px; margin-right: 10px; cursor: pointer;" (click)="filterByCategory('Games')">Games</button>
-      <button style="background-color: #007bff; color: #fff; border: none; padding: 10px 20px; margin-right: 10px; cursor: pointer;" (click)="filterByCategory('Beauty')">Beauty</button>
-      <button style="background-color: #007bff; color: #fff; border: none; padding: 10px 20px; margin-right: 10px; cursor: pointer;" (click)="filterByCategory('Fashion')">Fashion</button>
-      <button style="background-color: #007bff; color: #fff; border: none; padding: 10px 20px; margin-right: 10px; cursor: pointer;" (click)="filterByCategory('Women')">Women</button>
-      <button style="background-color: #007bff; color: #fff; border: none; padding: 10px 20px; margin-right: 10px; cursor: pointer;" (click)="filterByCategory('Health')">Health</button>
+    <div style="display: flex; align-items: center;">
+      <i class="far fa-search" style="margin-right: 10px; color: #000000;"></i>
+      <input type="text" [(ngModel)]="searchTerm" placeholder="Search Products" (keyup)="searchApplications()"
+             style="background-color: #d0e7ff; color: #000000; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;">
     </div>
   </div>
+  
 
+  <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+    <div>
+      <button style="background-color: #007bff; color: #fff; border: none; padding: 10px 20px; margin-right: 10px; cursor: pointer; border-radius: 5px;" (click)="filterByCategory('Games')">Games</button>
+      <button style="background-color: #007bff; color: #fff; border: none; padding: 10px 20px; margin-right: 10px; cursor: pointer; border-radius: 5px;" (click)="filterByCategory('Beauty')">Beauty</button>
+      <button style="background-color: #007bff; color: #fff; border: none; padding: 10px 20px; margin-right: 10px; cursor: pointer; border-radius: 5px;" (click)="filterByCategory('Fashion')">Fashion</button>
+      <button style="background-color: #007bff; color: #fff; border: none; padding: 10px 20px; margin-right: 10px; cursor: pointer; border-radius: 5px;" (click)="filterByCategory('Women')">Women</button>
+      <button style="background-color: #007bff; color: #fff; border: none; padding: 10px 20px; margin-right: 10px; cursor: pointer; border-radius: 5px;" (click)="filterByCategory('Health')">Health</button>
+    </div>
+  </div>
+  
   <ul style="list-style-type: none; padding: 0;">
     <li *ngFor="let product of filteredProducts" style="font-size: 18px; line-height: 1.6; margin-bottom: 10px;">
-      <a [routerLink]="['/product', product.id]" style="color: #007bff; text-decoration: none;">{{ product.name }}</a>
-      <button (click)="toggleFavorite(product)" style="margin-left: 10px; background-color: #007bff; color: #fff; border: none; padding: 5px 10px; cursor: pointer;">
+      <a [routerLink]="['/product', product.id]" style="color: #000000; text-decoration: none;">{{ product.name }}</a>
+      <button (click)="toggleFavorite(product)" style="margin-left: 10px; background-color: #ff7f10; color: #fff; border: none; padding: 5px 10px; cursor: pointer; border-radius: 5px; font-size: 14px;">
         <span *ngIf="isFavorite(product); else notFavorite">Remove from Favorites</span>
         <ng-template #notFavorite>Add to Favorites</ng-template>
       </button>
+      <button *ngIf="user && isAdmin()" (click) = "deleteProductById(product.id)" style="margin-left: 10px; background-color: #ff3535; color: #fff; border: none; padding: 5px 10px; cursor: pointer; border-radius: 5px; font-size: 14px;">
+        Delete Product
+      </button>
+      <!-- <button *ngIf="isAdmin()" (click)="deleteProductById(product.id)">Delete</button> -->
+
+      
       <span style="font-weight: bold;">{{ product.price }}</span>
     </li>
   </ul>

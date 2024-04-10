@@ -13,6 +13,8 @@ import { LoginComponent } from './login';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { FavoritesComponent } from './favorites/favorites.component';
+import { ProductFormComponent } from './product-form/product-form.component';
+import { ProductCreateComponent } from './product-create/product-create.component';
 
 @NgModule({
     imports: [
@@ -30,6 +32,8 @@ import { FavoritesComponent } from './favorites/favorites.component';
         ProductListComponent,
         ProductDetailComponent,
         FavoritesComponent,
+        ProductFormComponent,
+        ProductCreateComponent,
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },

@@ -1,27 +1,31 @@
-﻿<!-- Navigation -->
-<nav class="navbar navbar-expand navbar-light bg-info px-3" *ngIf="user">
-    <div class="navbar-nav">
-        <a class="nav-item nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" style="font-weight: bold;">Home</a>
-        <a class="nav-item nav-link" routerLink="/product-list" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" style="font-weight: bold;">Apps</a>
-        <a class="nav-item nav-link" routerLink="/admin" routerLinkActive="active" *ngIf="user && isAdmin()" style="font-weight: bold;">Admin</a>
-        <button class="btn btn-link nav-item nav-link" (click)="logout()" style="font-weight: bold;">Logout</button>
-    </div>
+﻿<nav class="navbar navbar-expand navbar bg-info px-3" *ngIf="user" style="background-color: rgb(104, 232, 255);">
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 50 50">
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <path stroke="white" d="M6.25 25h37.5"/>
+        <path stroke="#000000" d="M6.25 12.5h25m-12.5 25h25z"/>
+    </g>
+</svg>
+
+
+  <div class="navbar-nav">
+    <a class="nav-item nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" style="font-weight: bold; color: #020202">Home</a>
+    <a class="nav-item nav-link" routerLink="/product-list" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" style="font-weight: bold; color: #020202">Apps</a>
+    <a class="nav-item nav-link" routerLink="/admin" routerLinkActive="active" *ngIf="user && isAdmin()" style="font-weight: bold; color: #020202">Admin</a>
+    <a class="nav-item nav-link" routerLink="/product-create" routerLinkActive="active" *ngIf="user && isAdmin()" style="font-weight: bold; color: #020202">Create Product</a>
+
+    <i class="gg-menu"></i>
+
+    <button class="btn btn-link nav-item nav-link" (click)="logout()" style="font-weight: bold; color: #020202">Logout</button>
+  </div>
 </nav>
 
 <div class="container">
-    <!-- Router outlet for displaying different views -->
-    <router-outlet></router-outlet>
-    
-    <!-- Add product-list component -->
-    <!-- <app-product-list></app-product-list> -->
-    
-    <!-- Add favorites component -->
-    <app-favorites></app-favorites>
-</div> 
+  <router-outlet></router-outlet>
 
-<!-- Footer -->
+  <app-favorites></app-favorites>
+</div>
+
 <footer class="text-center mt-4">
-    <p style="font-weight: bold;">Created by S A Sreejith</p>
-    <p style="font-weight: bold;">April 2024</p>
+  <p style="font-weight: bold;">Created by S A Sreejith</p>
+  <p style="font-weight: bold;">April 2024</p>
 </footer>
-  

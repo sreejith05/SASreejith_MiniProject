@@ -14,9 +14,6 @@ export class AuthGuard implements CanActivate {
         // Check if the user is logged in
         const user = this.authenticationService.userValue;
         if (user) {
-            // If the user is logged in, you may want to perform additional checks here,
-            // such as verifying the validity of the authentication token.
-            // For now, simply return true to allow access.
             return true;
         }
 
