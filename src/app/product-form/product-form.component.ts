@@ -1,3 +1,4 @@
+
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Product } from '../_models/product'; // Import the product model
 
